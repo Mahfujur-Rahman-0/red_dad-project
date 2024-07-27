@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <link rel="stylesheet" href="css/customCss.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="box" class="box modalBoxContainer">
+      <div id="slideUpButton" class="modalBox"></div>
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <div class="sliderContainer ImgSideCenter">
+              <div class="text-center">
+                <p class="pt-3">2 of 5</p>
+                <p class="mt-5">
+                  How much are you willing, able, and eager to invest into
+                  becoming a Rad Dad?
+                </p>
+                <div class="range d-flex justify-content-evenly w-75 mx-auto">
+                  <form action="">
+                    <input type="radio" id="rangeOne" name="rangeGroup" />
+                    <label for="rangeOne"> 0-100</label>
+                    <input type="radio" id="rangeTwo" name="rangeGroup" />
+                    <label for="rangeTwo">100-1000 </label>
+                    <input type="radio" id="rangeThree" name="rangeGroup" />
+                    <label for="rangeThree">1000-10,000</label>
+                    <input type="radio" id="rangeFour" name="rangeGroup" />
+                    <label for="rangeFour">10,000 +</label>
+                  </form>
+                </div>
+              </div>
+              <div class="text-end">
+                <button class="sliderBTnNext" onclick="nextSlide()">
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sliderContainer ImgSideLeft">
+              <div class="text-center">
+                <p class="pt-3">3 of 5</p>
+                <p class="mt-sm-5 mt-3">What are you wanting to achieve?</p>
+                <form action="#">
+                  <textarea class="massageOne" name="#" id=""></textarea>
+                </form>
+              </div>
+              <div class="d-flex justify-content-between mx-auto mt-4 w_60">
+                <div class="text-start">
+                  <button class="sliderBTnPrev3" onclick="prevSlide()">
+                    Previous
+                  </button>
+                </div>
+                <div class="text-end">
+                  <button class="sliderBTnNext3" onclick="nextSlide()">
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sliderContainer ImgSideRight">
+              <div class="text-center">
+                <p class="pt-3">4 of 5</p>
+                <p class="mt-sm-5 mt-3">
+                  What's your biggest fear in becoming a Rad Dad?
+                </p>
+                <form action="#">
+                  <textarea class="massageOne" name="#" id=""></textarea>
+                </form>
+              </div>
+              <div class="d-flex justify-content-between mx-auto mt-4 w_60">
+                <div class="text-start">
+                  <button class="sliderBTnPrev3" onclick="prevSlide()">
+                    Previous
+                  </button>
+                </div>
+                <div class="text-end">
+                  <button class="sliderBTnNext3" onclick="nextSlide()">
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sliderContainer ImgSideLeft">
+              <div class="text-center">
+                <p class="pt-3">5 of 5</p>
+                <p class="mt-sm-5 mt-3">
+                  If Rad Dad Coaching did not exist, what solutions would you
+                  use alternatively?
+                </p>
+                <form action="#">
+                  <textarea class="massageOne" name="#" id=""></textarea>
+                </form>
+              </div>
+              <div class="d-flex justify-content-between mx-auto mt-4 w_60">
+                <div class="text-start">
+                  <button class="sliderBTnPrev3" onclick="prevSlide()">
+                    Previous
+                  </button>
+                </div>
+                <div class="text-end">
+                  <button class="sliderBTnNext3" onclick="nextSlide()">
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="sliderContainer ImgSideCenter">
+              <div class="text-center pt-5">
+                <h1>Thank You</h1>
+                <div class="text-center" style="margin-top: 200px">
+                  <div>
+                    <p>Someone from our team will reach out to you</p>
+                  </div>
+                  <div>
+                    <p>as soon as possible.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header id="goUp">
+      <nav>
+        <section
+          class="HeaderSection w-lg-75 mx-auto d-flex justify-content-between"
+        >
+          <a href="#">
+            <div class="logoContainer d-flex">
+              <img class="img-fluid" src="image/logoOne.png" alt="" />
+              <img
+                class="img-fluid mt-sm-3 my-auto"
+                src="image/headerLogoTwo.png"
+                alt=""
+              />
+            </div>
+          </a>
+
+          <div class="HomeLogo my-auto">
+            <a href="#">
+              <img src="image/DadsHome.png" alt="" />
+            </a>
+          </div>
+
+          <div
+            class="my-auto d-none socialContainer d-md-flex justify-content-evenly"
+          >
+            <div>
+              <a href="#">
+                <img class="img-fluid" src="image/Facebook.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img class="img-fluid" src="image/Instagram.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img class="img-fluid" src="image/Twitter.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div id="menuBtn" class="my-auto me-sm-5 me-3 d-md-none d-block">
+            <img class="img-fluid" src="image/menuBtn.png" alt="" />
+          </div>
+        </section>
+      </nav>
+    </header>
+    <div id="pageOne" class="pageOne">
+      <section class="headerBodySection position-relative">
+        <div>
+          <div
+            class="whiteText textHeight d-flex justify-content-center pt-4 text50px"
+          >
+            <div><p>LEARN HOW TO:</p></div>
+            <div>
+              <img style="margin-top: 20px" src="image/XMLID_6_.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="marginTOp28 text-center text30px roboto-thin-italic whiteText"
+          >
+            <p>Be The Dad Your Wife Wishes She Had</p>
+          </div>
+        </div>
+        <div>
+          <form class="d-md-flex customInput justify-content-center">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Phone" />
+            <button type="button" id="slideDownButtonO">
+              JOIN THE WAITING LIST
+            </button>
+          </form>
+        </div>
+        <div
+          class="text-center position-relative mx-auto mt-5"
+          style="max-width: 1200px"
+        >
+          <iframe
+            scrolling="no"
+            id="videoPlayer"
+            class="mx-auto"
+            style="width: 90%; display: none; aspect-ratio: 1/0.7"
+            src="https://www.youtube.com/embed/wldpoG5acg8"
+            title="Man In Mars | Hollywood Hindi Dubbed Movie"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <img
+            style="width: 90%"
+            id="playVideo"
+            class="img-fluid mx-auto"
+            src="image/lanpress-course-hero.jpg.png"
+            alt=""
+          />
+        </div>
+        <div class="text-sm-center courseDescription px-3 px-sm-0 mt-4">
+          <p><b>01 — See if you can relate</b></p>
+          <h1>Who is this course for?</h1>
+          <p>
+            Dad’s who want to learn how to better Lorem Ipsum is simply dummy
+            text of the printing and typesetting
+          </p>
+          <p>
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s,
+          </p>
+        </div>
+        <div
+          class="cardContainer d-md-flex justify-content-between px-3 p-md-0 mx-auto mt-5"
+        >
+          <a href="#"
+            ><div class="card mx-auto m-md-0 mb-3" style="max-width: 24rem">
+              <div class="card-body">
+                <img class="img-fluid mb-3" src="image/Background.png" alt="" />
+                <h5 class="card-title">Be A Superhero To Your Kids</h5>
+                <p class="card-text">
+                  This course equips you Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry.
+                </p>
+              </div>
+            </div></a
+          ><a href="#">
+            <div class="card mx-auto m-md-0 mb-3 mx-2" style="max-width: 24rem">
+              <div class="card-body">
+                <img
+                  class="img-fluid mb-3"
+                  src="image/Background(1).png"
+                  alt=""
+                />
+                <h5 class="card-title">Avoid The Top 9 Mistakes</h5>
+                <p class="card-text">
+                  Discover proven strategies Lorem Ipsum is simply dummy text of
+                  the printing and typesetting industry.
+                </p>
+              </div>
+            </div></a
+          ><a href="#">
+            <div class="card mx-auto m-md-0 mb-3" style="max-width: 24rem">
+              <div class="card-body">
+                <img
+                  class="img-fluid mb-3"
+                  src="image/Background(2).png"
+                  alt=""
+                />
+                <h5 class="card-title">Raise Your Daughters Right</h5>
+                <p class="card-text">
+                  Learn how to engage Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry.
+                </p>
+              </div>
+            </div></a
+          >
+        </div>
+        <div class="text-center d-md-block d-none mt-5">
+          <button class="btnCustom">JOIN THE WAITING LIST</button>
+        </div>
+
+        <img
+          class="position-absolute SVG img-fluid w-100 d-lg-block d-none"
+          src="image/SVG.svg"
+          alt=""
+        />
+      </section>
+      <section class="grayBackground grayBoxHeight"></section>
+      <section
+        class="maxWidth1200 px-4 py-5 px-lg0 mx-auto d-md-flex d-block justify-content-between"
+      >
+        <div class="MeetCoach">
+          <p class="mb-3">02 — Meet your coach</p>
+          <h1>
+            Hey, I'm <br />
+            Demarick Patton
+          </h1>
+          <p>I’m a seasoned Field Strategist and Life Coach</p>
+          <p>empowering Dad’s to unleash their full potential.</p>
+          <p class="drakText mt-3">What you will learn:</p>
+          <ul>
+            <li><b>How to:</b> Be A Superhero To Your Kids</li>
+            <li><b>How to: </b>Get Your Boys To Become Men</li>
+            <li><b>How to: </b>Raise Your Daughters Right</li>
+            <li><b>How to:</b> Be The Dad Your Wife Wishes She Had</li>
+          </ul>
+          <div class="">
+            <button class="btnCustom">JOIN THE WAITING LIST</button>
+          </div>
+        </div>
+        <div class="bannerSection mt-md-0 mt-3">
+          <img class="img-fluid" src="image/FamilyBackground.png" alt="" />
+        </div>
+      </section>
+    </div>
+
+    <section id="PageTwo" class="headerBodySectionPageTwo position-relative">
+      <div class="LegalPageContainer mx-auto">
+        <div class="text-end">
+          <img
+            id="closeBTN"
+            class="img-fluid"
+            src="image/closeBTN.png"
+            alt=""
+          />
+        </div>
+        <div class="text-center mx-auto LegalPage text-white">
+          <p>Legalese</p>
+          <p>
+            Welcome to BeARadDad.com, where we’re all about Transforming Regular
+            Dudes into Rad Dads. The following is a list of the terms and
+            conditions that, “Cover both of our butts'', so to speak. Well,
+            enjoy, as much as Legalese can be enjoyed.
+          </p>
+          <p>1. Terms</p>
+          <p>
+            My dear friends, as you journey through the vast expanse of the
+            internet, remember that we are all called to live in harmony and
+            love with one another. By accessing or using our website, you are
+            agreeing to be guided by these terms and conditions, as well as our
+            privacy policy, which is in place to ensure that all who use our
+            website can do so peacefully and respectfully. If you find you
+            cannot agree with these terms and conditions, I urge you to refrain
+            from using our website and instead seek paths that align with your
+            beliefs and values. Remember, love and understanding are the
+            foundation of all true progress.
+          </p>
+          <p>2. Policies</p>
+          <p>
+            As you explore the world of business and entrepreneurship, remember
+            that your potential is limitless. Our website is here to guide and
+            support you on your journey, whether you're married or aspired to be
+            married. BeARadDad.com is also intended for those who are simply
+            curious about the education and/or the coaching services we offer.
+            Any use of our website for any other purpose other than that which
+            is righteous is prohibited. We believe in you, and we know that with
+            hard work, dedication, and a positive attitude, you can achieve
+            great things. Let's work together to help you radically increase the
+            probability of becoming an excellent man all around.
+          </p>
+          <p>3. Disclaimers</p>
+          <p>
+            OK. We're doing our best to give you the most accurate and helpful
+            information on this website, which might not be perfect all the
+            time. We're just doing the best we know how, just like that time I
+            tried to impress my Junior High crush and ended up blowing an
+            unintended random, out-of-nothing, mondo snot bubble, it was a
+            disaster… which had never happened before and never since then. Of
+            all times. But hey, we all have our moments. We promise to do our
+            best. It's important to remember that the information, products, and
+            services on this website are for educational and informative
+            purposes only. It's up to you to take responsibility for your own
+            life, to think critically, and conduct your research. While we
+            strive to provide accurate and helpful information on our website,
+            we make no representations or warranties of any kind, express or
+            implied, about the completeness, accuracy, reliability, suitability,
+            or availability concerning the website or the information, products,
+            services, or related graphics contained on the website for any
+            purpose. We are not licensed for anything relevant here. So you
+            probably should not listen to us for anything, for as everyone knows
+            you can only dispense good insight if someone else made you get a
+            license first. As always, be responsible, and make the best
+            decisions possible. Strive for excellence and integrity as much as
+            possible. And remember, let us know if you see how we might be able
+            to do something better. We love hearing from you.
+          </p>
+          <p>4. Limitations</p>
+          <p>
+            Attention everyone, let me be crystal clear. We are going above and
+            beyond to provide you with the best experience on this website, but
+            let's face it, we can't control everything in the universe. So, to
+            the fullest extent permitted by law, we are not responsible for any
+            damages that may arise from the use of our website and/or the
+            corresponding products, services, and/or information. Whether it's
+            direct, indirect, incidental, punitive, or consequential, we are not
+            liable for any of it. It's just part of the game and we're all
+            playing it. But, rest assured, we will always do our best to give
+            you the most valuable information and resources and make your
+            experience as enjoyable as possible. Remember, growth and learning
+            can be challenging, but it's also where the real rewards are. It's
+            all about the hustle, the grind, putting in the work, and making it
+            happen.
+          </p>
+          <p>5. Use License</p>
+          <p>
+            Are you ready to take control of your online experience and make it
+            truly your own? Remember, our website and its content are valuable
+            assets, protected by copyright and trademark laws. But that doesn't
+            mean you can't use it to your advantage! By using our website for
+            your personal use, you can gain valuable insights, knowledge, and
+            inspiration. But remember, if you want to reproduce, distribute,
+            modify, or create derivative works from our content, you'll need to
+            get our express written consent first. So take control of your
+            entrepreneurial journey and make it truly your own, with the power
+            of our website at your fingertips!
+          </p>
+          <p>6. Revisions And Errdata</p>
+          <p>
+            "In the fast-paced world, it's important to stay agile and adapt to
+            change. That's why we reserve the right to make revisions and
+            updates to our website and terms and conditions at any time, without
+            notice. We understand that errors and omissions can occur, which is
+            why we also reserve the right to correct any inaccuracies on our
+            website. By staying vigilant and making necessary adjustments, we
+            can ensure that our website is providing the most accurate and
+            up-to-date information for our valued customers. Together, we can
+            strive for excellence and stay ahead of the curve."
+          </p>
+          <p>7. Links</p>
+          <p>
+            In this world, we are all connected, and our website is no
+            different. We may provide links to other websites that may not be
+            under our control. While we make every effort to ensure that the
+            links we provide are of the highest quality, we cannot be held
+            responsible for the content or practices of any linked website. It's
+            important to remember that when you click on a link, you are leaving
+            the safety and security of our website and entering the realm of
+            another. We urge you to exercise discretion and be wise as you
+            navigate through the vast landscape of the internet.
+          </p>
+          <p>8. Governing Law</p>
+          <p>
+            Laws are necessary to maintain order and fairness. And it's
+            important to remember that true justice comes from within.
+            Therefore, these terms and conditions shall be governed by and
+            construed per the laws of the State of Florida, without giving
+            effect to any principles of conflicts of law. Let us always strive
+            to be guided by our inner conscience and principles of
+            righteousness, truth, and love in all our actions, and when
+            conflicts arise, let’s seek to resolve them through peaceful and
+            constructive means. Each of us can and ought to glorify God, for
+            that would fulfill our purpose. And to add meaning to our endeavors,
+            let’s aim to glorify God better together, for therein lies the
+            meaning of life.
+          </p>
+          <p>9. Intellectual Property</p>
+          <p>
+            All the content, logos, trademarks, and other intellectual property
+            on this website belong to either: CJ Wit (Christopher John
+            Witdoeckt), AwarenessAcademy, and/or BeARadDad.com,
+          </p>
+          <p>10. Indemnification</p>
+          <p>
+            As a user of this website and the information it contains, you are
+            agreeing to take full responsibility for any claims, damages,
+            losses, or expenses that may arise from your use of the website or
+            any associated content, information, or ideas. In other words, you
+            are agreeing to protect and hold harmless the creators, and/or
+            contributors, and associates of the website from any legal issues
+            that may arise from your use of the information provided. It's
+            important to always be mindful of the potential consequences of your
+            actions and to take responsibility for them, especially when using
+            the information provided by someone else.
+          </p>
+          <p>11. Contact Information</p>
+          <p>
+            <a style="color: #fff" href="mailto:cj@cjwit.com"
+              ><u>cj@cjwit.com</u></a
+            >
+          </p>
+          <p>12. Refund Policy</p>
+          <p>
+            Refunds can be obtained within 30 days, upon request. Thanks for
+            visiting BeARadDad.com! We hope you found our website clear,
+            captivating, and compelling. Remember, the world is eagerly awaiting
+            even groaning for the revelation of who you are meant to be. So, If
+            you have any questions and/or feedback, please don't hesitate to
+            reach out. We're here to support you on your Rad Dad Journey.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div
+          class="whiteText textHeight d-flex justify-content-center pt-4 text50px"
+        >
+          <div><p>LEARN HOW TO:</p></div>
+          <div>
+            <img style="margin-top: 20px" src="image/XMLID_6_.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="marginTOp28 text-center text30px roboto-thin-italic whiteText"
+        >
+          <p>Be The Dad Your Wife Wishes She Had</p>
+        </div>
+      </div>
+      <div>
+        <form class="d-md-flex customInput justify-content-center">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="text" placeholder="Phone" />
+          <button type="button" id="slideDownButtonT">
+            JOIN THE WAITING LIST
+          </button>
+        </form>
+      </div>
+
+      <img
+        class="position-absolute SVG img-fluid w-100 d-lg-block d-none"
+        src="image/SVG.svg"
+        alt=""
+      />
+    </section>
+
+    <footer class="bg-black d-md-block d-none">
+      <section class="maxWidth1200 d-flex justify-content-between mx-auto">
+        <div class="pt-5 w-50">
+          <a href="#">
+            <div class="FooterlogoContainer my-4 d-flex">
+              <img class="img-fluid" src="image/logoOne.png" alt="" />
+              <img
+                class="img-fluid mt-3 my-auto"
+                src="image/footerLogoTwo.png"
+                alt=""
+              />
+            </div>
+          </a>
+          <div class="copyRIGHTS pt-5 d-flex">
+            <p>© 2024 & BEYOND BEARADDAD.COM. ALL RIGHTS RESERVED.</p>
+            <a id="PageTwoBTNo" class="LEGAL text-white" href="#goUp"
+              ><u> LEGAL</u>
+            </a>
+          </div>
+        </div>
+        <div class="w-50 h-100" style="overflow: hidden">
+          <div
+            class="socialContainer ms-auto mt-4 d-flex justify-content-evenly"
+          >
+            <div>
+              <a href="#">
+                <img class="img-fluid" src="image/Facebook.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img class="img-fluid" src="image/Instagram.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img class="img-fluid" src="image/Twitter.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="pt-5 mt-4">
+            <div class="">
+              <p class="textWhite">Start your journey today</p>
+            </div>
+            <div>
+              <form class="d-flex" action="#">
+                <input class="footerInput" type="text" placeholder="Email" />
+                <button class="footerInputbtn">Get In Touch</button>
+              </form>
+            </div>
+            <div class="position-relative">
+              <p class="mt-5 mb-0 pt-5 textWhite text-center">
+                Designed by SmartBirdMedia
+              </p>
+              <a class="goUpBtn" href="#goUp">
+                <img
+                  class="overlayBtn img-fluid"
+                  src="image/OverlayShadow.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <footer class="bg-black d-md-none d-block">
+      <div class="socialContainermx-auto pt-4 d-flex justify-content-evenly">
+        <div>
+          <a href="#">
+            <img class="img-fluid" src="image/Facebook.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img class="img-fluid" src="image/Instagram.png" alt="" />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img class="img-fluid" src="image/Twitter.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <a class="" href="#">
+          <div class="FooterlogoContainer justify-content-center my-4 d-flex">
+            <img class="img-fluid" src="image/logoOne.png" alt="" />
+            <img
+              class="img-fluid mt-3 my-auto"
+              src="image/footerLogoTwo.png"
+              alt=""
+            />
+          </div>
+        </a>
+      </div>
+      <div>
+        <form class="" action="#">
+          <input
+            class="footerInput w-75 mx-auto d-block"
+            type="text"
+            placeholder="Email"
+          />
+          <button class="mt-3 footerInputbtn d-block w-75 mx-auto">
+            Get In Touch
+          </button>
+        </form>
+      </div>
+      <div class="footerData mt-4">
+        <div class="position-relative">
+          <a class="goUpBtn" href="#goUp">
+            <img
+              class="overlayBtn img-fluid"
+              src="image/OverlayShadow.png"
+              alt=""
+          /></a>
+        </div>
+        <p class="">
+          © 2024 & BEYOND BEARADDAD.COM. ALL RIGHTS RESERVED.
+          <a href="#goUp" class="text-white" id="PageTwoBTNt"> <u> LEGAL</u></a>
+        </p>
+        <p class="my-2">Designed by SmartBirdMedia</p>
+      </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+    <script href="script/bootstrap.bundle.js"></script>
+  </body>
+</html>

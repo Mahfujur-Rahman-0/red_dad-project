@@ -1,0 +1,138 @@
+@media only screen and (max-width: 300px) {
+  .grayBoxHeight {
+    height: 1400px !important;
+  }
+}
+/* Extra small devices (phones, less than 600px) */
+@media only screen and (max-width: 599px) {
+  .sliderContainer {
+    height: 434px;
+  }
+  .slider {
+    margin-top: 0;
+  }
+  .slide {
+    padding: 0;
+  }
+  .logoContainer img:first-child {
+    height: 63px !important;
+  }
+  .logoContainer img {
+    width: 48px !important;
+  }
+  .logoContainer img:first-child {
+    align-self: center;
+  }
+  .HomeLogo > a > img {
+    width: 56%;
+  }
+  .logoContainer {
+    height: 122px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .headerBodySection {
+    height: 600px !important;
+  }
+  .customInput input {
+    width: 75% !important;
+  }
+  .customInput button {
+    width: 75% !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+}
+@media only screen and (max-width: 767px) {
+  .range label {
+    width: 150px;
+  }
+  .sliderBTnNext,
+  .sliderBTnPrev3,
+  .sliderBTnNext3 {
+    width: 80px;
+  }
+  .customInput input {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .customInput button {
+    height: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  .logoContainer img:first-child {
+    height: 91px;
+  }
+  .logoContainer img {
+    width: 65px;
+  }
+  .HomeLogo {
+    text-align: center;
+  }
+  .HomeLogo > a > img {
+    width: 70%;
+  }
+  .text50px div:first-child {
+    margin-left: 0;
+  }
+  .text50px {
+    position: relative;
+  }
+  .text50px div {
+    font-size: 32px;
+  }
+  .text50px div:last-child {
+    position: relative;
+  }
+  .text50px > div > img {
+    width: 70px;
+    position: absolute;
+    transform: rotate(61deg);
+    margin-top: 74px !important;
+    left: 24px;
+  }
+  .textHeight {
+    height: 48px;
+  }
+  .text30px {
+    font-size: 18px;
+  }
+
+  .marginTOp28 {
+    margin-top: 28px;
+  }
+  .headerBodySection {
+    height: 650px;
+  }
+  .grayBoxHeight {
+    height: 1200px;
+  }
+}
+/* Medium devices (landscape tablets and small desktops, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .grayBoxHeight {
+    height: 757px;
+  }
+  .headerBodySection {
+    height: 598px;
+  }
+  .cardContainer a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
